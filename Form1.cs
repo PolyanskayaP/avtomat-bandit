@@ -90,6 +90,7 @@ namespace avtomat_bandit
             Random random = new Random(); //Создаем экземпляр класса Random
             int dvg = random.Next(8); // Получаем случайное число от 0-7
             label1.Text = dvg.ToString(); //Выводим полученное число.
+            //pictureBox2.imageKey = imageList1;
         }
 
         private void dvg2_Tick(object sender, EventArgs e)
@@ -185,6 +186,11 @@ namespace avtomat_bandit
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

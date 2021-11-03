@@ -47,8 +47,10 @@ namespace avtomat_bandit
             this.stop2 = new System.Windows.Forms.Timer(this.components);
             this.stop3 = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +58,7 @@ namespace avtomat_bandit
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ImageList = this.imageList1;
             this.label1.Location = new System.Drawing.Point(58, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 147);
@@ -102,6 +105,7 @@ namespace avtomat_bandit
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(45, 338);
             this.button2.Name = "button2";
@@ -213,6 +217,16 @@ namespace avtomat_bandit
             this.imageList1.Images.SetKeyName(3, "3.jpg");
             this.imageList1.Images.SetKeyName(4, "4.png");
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.ImageLocation = "D:\\! Поля\\3 семестр\\ЯП\\птички\\2.jpg";
+            this.pictureBox2.Location = new System.Drawing.Point(505, 251);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(102, 98);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::avtomat_bandit.Properties.Resources._5;
@@ -228,10 +242,11 @@ namespace avtomat_bandit
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 461);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -243,6 +258,7 @@ namespace avtomat_bandit
             this.Text = "Однорукий бандит";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -268,6 +284,7 @@ namespace avtomat_bandit
         private System.Windows.Forms.Timer stop3;
         public System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
