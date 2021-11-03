@@ -184,6 +184,9 @@ namespace avtomat_bandit
             label6.Text = "Осталось попыток: " + counter_try; //Выводим кол-во попыток на форму.
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
